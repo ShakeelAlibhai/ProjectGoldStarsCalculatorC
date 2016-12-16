@@ -1,30 +1,34 @@
 package projectgoldstarscalculatorc;
 import java.util.Scanner;
-public class PythagoreanTripleCalculator
+public class MilesPerGallonCalculator
 {
-    private int num1;
-    private int num2;
+    private double reading1;
+    private double reading2;
+    private double gallons;
     
-    public PythagoreanTripleCalculator()
+    public MilesPerGallonCalculator()
     {
-        num1 = inputPrompt("the first number");
-        num2 = inputPrompt("the second number");
-        verify();
-        solve();
+        reading1 = inputPrompt("the beginning odometer reading");
+        reading2 = inputPrompt("the ending odometer reading");
+        gallons = inputPrompt("the number of gallons of gas used");
+        if(check())
+        {
+            solve();
+        }
     }
     
-    private static int inputPrompt(String prompt)
+    private double inputPrompt(String prompt)
     {
         Scanner keyboard = new Scanner(System.in);
         boolean repeat = false;
-        int input = 0;
+        double input = 0.0;
         do
         {
             System.out.print("Please enter " + prompt + ": ");
             String inputStr = keyboard.next();
             try
             {
-                input = Integer.parseInt(inputStr);
+                input = Double.parseDouble(inputStr);
                 repeat = false;
             }
             catch(Exception e)
@@ -34,17 +38,17 @@ public class PythagoreanTripleCalculator
                 repeat = true;
             }
         }while(repeat);
-        while(input < 1)
+        while(input < 0.0)
         {
             repeat = true;
             do
             {
-                System.out.println("ERROR: Number must be greater than or equal to 1.");
+                System.out.println("ERROR: Number cannot be negative.");
                 System.out.print("Please enter " + prompt + ": ");
                 String inputStr = keyboard.next();
                 try
                 {
-                    input = Integer.parseInt(inputStr);
+                    input = Double.parseDouble(inputStr);
                     repeat = false;
                 }
                 catch(Exception e)
@@ -58,26 +62,25 @@ public class PythagoreanTripleCalculator
         return input;
     }
     
-    private void verify()
+    private boolean check()
     {
-        if(num2 > num1)
+        if(reading1 > reading2)
         {
-            int temp;
-            temp = num1;
-            num1 = num2;
-            num2 = temp;
+            System.out.println("ERROR: Final odometer reading is less than original odometer reading.");
+            return false;
         }
+        if(gallons == 0)
+        {
+            System.out.println("ERROR: Gallons is 0.");
+            return false;
+        }
+        return true;
     }
     
     private void solve()
     {
-        int a, b, c;
-        a = (int)(Math.pow(num1, 2) - Math.pow(num2, 2));
-        b = 2 * num1 * num2;
-        c = (int)(Math.pow(num1, 2) + Math.pow(num2, 2));
-        String output = "a = " + a;
-        output += "\nb = " + b;
-        output += "\nc = " + c;
+        String output = "The travel distance was " + (reading2 - reading1) + " miles.";
+        output += "\nThe average miles per gallon was " + ((reading2 - reading1) / gallons) + ".";
         System.out.println(output);
     }
 }

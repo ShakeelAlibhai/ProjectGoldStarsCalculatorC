@@ -54,6 +54,16 @@ public class Trigonometry
                     new TangentRadians();
                     break;
                 }
+                case "7":
+                {
+                    new DegreesToRadians();
+                    break;
+                }
+                case "8":
+                {
+                    new RadiansToDegrees();
+                    break;
+                }
                 case "X":
                 {
                     continueRunning = false;
@@ -73,6 +83,8 @@ public class Trigonometry
                 + "4: Sine (Radians)\n"
                 + "5: Cosine (Radians)\n"
                 + "6: Tangent (Radians)\n"
+                + "7: Convert Degrees to Radians\n"
+                + "8: Convert Radians to Degrees\n"
                 + "X: Exit Trigonometry Menu");
     }
 }
