@@ -1,5 +1,5 @@
-# Project GoldStars Calculator C 1.1
-### Version 1.1
+# Project GoldStars Calculator C 1.1 Update 1
+### Version 1.1.1
 
 ## Statement
 Project GoldStars Calculator C is a simple yet useful command-line calculator coded in the Java programming language.
@@ -17,8 +17,4 @@ command line, or just as a fun and/or educational program.
 * Quadratic Equation Solver
 
 ## What's New in This Version
-* Added Miles Per Gallon Calculator.
-* Added Conversions, featuring the options to convert from degrees to radians, radians to degrees, Celsius to Fahrenheit, and Fahrenheit to Celsius.
-* Added the option to convert from degrees to radians (accessible from the Trigonometry and Conversions menus).
-* Added the option to convert from radians to degrees (accessible from the Trigonometry and Conversions menus).
-* Updated code of Pythagorean Triple Calculator.
+* There is a small change in the Conversions Menu.

@@ -61,6 +61,6 @@ public class Conversions
                 + "2: Radians to Degrees\n"
                 + "3: Celsius to Fahrenheit\n"
                 + "4: Fahrenheit to Celsius\n"
-                + "X: Exit Trigonometry Menu");
+                + "X: Exit Conversions Menu");
     }
 }
