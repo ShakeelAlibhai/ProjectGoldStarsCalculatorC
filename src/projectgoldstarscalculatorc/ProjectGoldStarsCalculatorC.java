@@ -2,8 +2,8 @@ package projectgoldstarscalculatorc;
 import java.util.Scanner;
 public class ProjectGoldStarsCalculatorC
 {
-    public static final String name = "Project GoldStars Calculator C 1.1 Update 1";
-    public static final String version = "Version 1.1.1";
+    public static final String name = "Project GoldStars Calculator C 1.2";
+    public static final String version = "Version 1.2";
     public static String theme = "***************";
     
     public static void main(String[] args)

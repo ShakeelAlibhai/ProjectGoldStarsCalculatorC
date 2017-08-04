@@ -1,46 +1,54 @@
 package projectgoldstarscalculatorc;
 import java.util.Scanner;
-public class Conversions
+public class TrigonometricConversions
 {
-    public Conversions()
+    public TrigonometricConversions()
     {
-        conversions();
+        trigonometricConversions();
     }
     
-    private static void conversions()
+    private static void trigonometricConversions()
     {
         Scanner keyboard = new Scanner(System.in);
         boolean continueRunning = true;
-        new ConversionsMenu();
+        displayConversionsMenu();
         while(continueRunning)
         {
-            System.out.print("Please enter the number or letter of the option you want, or press M to see the Conversions Menu again: ");
+            System.out.print("Please enter the number or letter of the option you want, or press M to see the Trigonometric Conversions Menu again: ");
             String conversionsMenuChoice = keyboard.next();
             conversionsMenuChoice = conversionsMenuChoice.toUpperCase();
             switch(conversionsMenuChoice)
             {
                 case "M":
                 {
-                    new ConversionsMenu();
+                    displayConversionsMenu();
                     break;
                 }
                 case "1":
                 {
-                    new TemperatureConversions();
+                    new DegreesToRadians();
                     break;
                 }
                 case "2":
                 {
-                    new TrigonometricConversions();
+                    new RadiansToDegrees();
                     break;
                 }
                 case "X":
                 {
                     continueRunning = false;
-                    new Menu();
+                    new ConversionsMenu();
                     break;
                 }
             }
         }
+    }
+    
+    private static void displayConversionsMenu()
+    {
+        System.out.println("TRIGONOMETRIC CONVERSIONS MENU\n"
+                + "1: Degrees to Radians\n"
+                + "2: Radians to Degrees\n"
+                + "X: Exit Trigonometric Conversions Menu");
     }
 }

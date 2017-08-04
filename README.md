@@ -1,5 +1,4 @@
-# Project GoldStars Calculator C 1.1 Update 1
-### Version 1.1.1
+# Project GoldStars Calculator C
 
 ## Statement
 Project GoldStars Calculator C is a simple yet useful command-line calculator coded in the Java programming language.
@@ -16,5 +15,11 @@ command line, or just as a fun and/or educational program.
 * Pythagorean Triple Calculator
 * Quadratic Equation Solver
 
-## What's New in This Version
-* There is a small change in the Conversions Menu.
+## Disclaimer
+1. Neither Project GoldStars Calculator C, nor the programmer(s) and/or developer(s) of Project GoldStars Calculator C,
+nor the distributor(s) of Project GoldStars Calculator C,
+nor anyone or anything else that is involved with Project GoldStars Calculator C,
+are responsible for any misinformation, any inaccuracy, any problems, any harm, or any other negative consequences,
+whether physical or otherwise, caused by Project GoldStars Calculator C
+or as a result of using Project GoldStars Calculator C.
+2. Calculations and conversions may not be exact.
