@@ -2,6 +2,9 @@
 ### Changelog
 
 ## Version 1.2.x
+### Version 1.2.1
+* Updated the Disclaimer.
+
 ### Version 1.2
 * Added the option to convert from Celsius to Kelvin.
 * Added the option to convert from Fahrenheit to Kelvin.

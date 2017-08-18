@@ -22,4 +22,4 @@ nor anyone or anything else that is involved with Project GoldStars Calculator C
 are responsible for any misinformation, any inaccuracy, any problems, any harm, or any other negative consequences,
 whether physical or otherwise, caused by Project GoldStars Calculator C
 or as a result of using Project GoldStars Calculator C.
-2. Calculations and conversions may not be exact.
+2. Calculations and conversions made in Project GoldStars Calculator C are not guaranteed to be accurate and/or exact.

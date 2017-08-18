@@ -14,6 +14,6 @@ public class Disclaimer
                 + "are responsible for any misinformation, any inaccuracy, any problems, any harm, or any other negative consequences,\n"
                 + "whether physical or otherwise, caused by Project GoldStars Calculator C "
                 + "or as a result of using Project GoldStars Calculator C.\n"
-                + "2. Calculations and conversions may not be exact.");
+                + "2. Calculations and conversions made in Project GoldStars Calculator C are not guaranteed to be accurate and/or exact.");
     }
 }
