@@ -2,6 +2,9 @@
 ### Changelog
 
 ## Version 1.2.x
+### Version 1.2.2
+* Added a message saying "Error: Invalid Input" that is displayed in the event of an invalid input in the main menu.
+
 ### Version 1.2.1
 * Updated the Disclaimer.
 
