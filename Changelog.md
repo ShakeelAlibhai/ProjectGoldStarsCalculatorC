@@ -2,6 +2,9 @@
 ### Changelog
 
 ## Version 1.2.x
+### Version 1.2.3
+* Made the line of astericks appear on more occassions.
+
 ### Version 1.2.2
 * Added a message saying "Error: Invalid Input" that is displayed in the event of an invalid input in the main menu.
 

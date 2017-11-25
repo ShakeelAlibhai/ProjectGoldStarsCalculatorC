@@ -14,9 +14,11 @@ public class Trigonometry
         displayTrigonometryMenu();
         while(continueRunning)
         {
+            System.out.println(ProjectGoldStarsCalculatorC.theme);
             System.out.print("Please enter the number or letter of the option you want, or press M to see the Trigonometry Menu again: ");
             String trigonometryMenuChoice = keyboard.next();
             trigonometryMenuChoice = trigonometryMenuChoice.toUpperCase();
+            System.out.println(ProjectGoldStarsCalculatorC.theme);
             switch(trigonometryMenuChoice)
             {
                 case "M":
