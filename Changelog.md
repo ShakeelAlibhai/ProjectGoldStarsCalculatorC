@@ -1,9 +1,16 @@
 # Project GoldStars Calculator C
 ### Changelog
 
+## Version 1.3.x
+### Version 1.3
+* Added the option to find the log base 10 of a number.
+* Added the option to find the natural log of a number.
+* Updated the instructions in the Quadratic Equation Solver.
+* Made the line of asterisks appear more consistently.
+
 ## Version 1.2.x
 ### Version 1.2.3
-* Made the line of astericks appear on more occassions.
+* Made the line of asterisks appear on more occasions.
 
 ### Version 1.2.2
 * Added a message saying "Error: Invalid Input" that is displayed in the event of an invalid input in the main menu.

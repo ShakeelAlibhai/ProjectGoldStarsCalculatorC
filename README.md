@@ -8,6 +8,7 @@ command line, or just as a fun and/or educational program.
 ## Features
 * Basic Calculations (Add, Subtract, Multiply, and Divide)
 * Square Roots, Cube Roots, and Exponents
+* Log Base 10
 * Trigonometry
 * Conversions
 * Average Calculator

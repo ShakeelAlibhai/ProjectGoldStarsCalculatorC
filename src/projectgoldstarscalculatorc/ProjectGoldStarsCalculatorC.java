@@ -2,8 +2,8 @@ package projectgoldstarscalculatorc;
 import java.util.Scanner;
 public class ProjectGoldStarsCalculatorC
 {
-    public static final String name = "Project GoldStars Calculator C 1.2 Update 3";
-    public static final String version = "Version 1.2.3";
+    public static final String name = "Project GoldStars Calculator C 1.3";
+    public static final String version = "Version 1.3";
     public static String theme = "***************";
     
     public static void main(String[] args)
@@ -63,10 +63,20 @@ public class ProjectGoldStarsCalculatorC
                 }
                 case "8":
                 {
-                    new Trigonometry();
+                    new NaturalLog();
                     break;
                 }
                 case "9":
+                {
+                    new LogBase10();
+                    break;
+                }
+                case "10":
+                {
+                    new Trigonometry();
+                    break;
+                }
+                case "11":
                 {
                     new Conversions();
                     break;

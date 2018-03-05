@@ -14,9 +14,11 @@ public class TrigonometricConversions
         displayConversionsMenu();
         while(continueRunning)
         {
+            System.out.println(ProjectGoldStarsCalculatorC.theme);
             System.out.print("Please enter the number or letter of the option you want, or press M to see the Trigonometric Conversions Menu again: ");
             String conversionsMenuChoice = keyboard.next();
             conversionsMenuChoice = conversionsMenuChoice.toUpperCase();
+            System.out.println(ProjectGoldStarsCalculatorC.theme);
             switch(conversionsMenuChoice)
             {
                 case "M":

@@ -6,7 +6,7 @@ public class QuadraticEquationSolver
     
     public QuadraticEquationSolver()
     {
-        System.out.println("Please enter the quadratic equation in the form ax^2 + bx + c.");
+        System.out.println("Please enter the quadratic equation in the form ax^2 + bx + c = 0.");
         a = userPrompt('a');
         b = userPrompt('b');
         c = userPrompt('c');
