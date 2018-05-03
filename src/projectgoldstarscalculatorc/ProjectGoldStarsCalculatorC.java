@@ -2,23 +2,28 @@ package projectgoldstarscalculatorc;
 import java.util.Scanner;
 public class ProjectGoldStarsCalculatorC
 {
-    public static final String name = "Project GoldStars Calculator C 1.3";
-    public static final String version = "Version 1.3";
+    public static final String name = "Project GoldStars Calculator C 1.3 Update 1";
+    public static final String version = "Version 1.3.1";
     public static String theme = "***************";
     
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
-        boolean continueRunning = true;
+        boolean continueRunning = true; //Tracks whether the main while loop should continue running
+        //Print a welcome message to the user
         System.out.println("Welcome to Project GoldStars Calculator C!");
         System.out.println(theme);
+        //Display the menu
         new Menu();
         while(continueRunning)
         {
             System.out.println(theme);
+            //Prompt the user for input
             System.out.print("Please enter the number or letter of the option you want, or press M to see the menu again: ");
+            //Get the user's input, convert it to upper case, and save it in a String
             String choice = keyboard.next().toUpperCase();
             System.out.println(theme);
+            //Process the user's input
             switch(choice)
             {
                 case "M":
@@ -113,9 +118,11 @@ public class ProjectGoldStarsCalculatorC
                 }
                 case "X":
                 {
+                    //Set continueRunning to false, thus exiting the main while loop and exiting the program
                     continueRunning = false;
                     break;
                 }
+                //If the user's input could not be recognized
                 default:
                 {
                     System.out.println("Error: Invalid Input");

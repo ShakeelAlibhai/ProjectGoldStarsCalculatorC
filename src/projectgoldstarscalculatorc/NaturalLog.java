@@ -22,6 +22,6 @@ public class NaturalLog
             System.out.println("ERROR");
             return;
         }
-        System.out.println("The log base 10 of " + num + " is: " + Math.log(num));
+        System.out.println("The natural log of " + num + " is: " + Math.log(num));
     }
 }

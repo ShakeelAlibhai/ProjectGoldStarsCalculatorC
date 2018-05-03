@@ -6,6 +6,7 @@ public class Menu
         menu();
     }
     
+    //Prints the main menu to the screen
     private static void menu()
     {
         System.out.println("MENU\n"

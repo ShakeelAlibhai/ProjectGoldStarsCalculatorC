@@ -2,6 +2,11 @@
 ### Changelog
 
 ## Version 1.3.x
+### Version 1.3.1
+* Updated Exponents.
+* Updated Natural Log.
+* Other minor changes.
+
 ### Version 1.3
 * Added the option to find the log base 10 of a number.
 * Added the option to find the natural log of a number.

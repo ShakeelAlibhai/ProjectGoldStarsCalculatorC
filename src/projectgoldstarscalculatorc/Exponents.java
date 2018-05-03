@@ -34,6 +34,6 @@ public class Exponents
             System.out.println("ERROR");
             return;
         }
-        System.out.println(baseNum + "^" + exponent + " = " + Math.pow(baseNum, exponent));
+        System.out.println(baseNum + " ^ " + exponent + " = " + Math.pow(baseNum, exponent));
     }
 }

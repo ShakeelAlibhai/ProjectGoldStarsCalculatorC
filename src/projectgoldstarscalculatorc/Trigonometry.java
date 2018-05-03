@@ -10,20 +10,22 @@ public class Trigonometry
     private static void trigonometry()
     {
         Scanner keyboard = new Scanner(System.in);
-        boolean continueRunning = true;
-        displayTrigonometryMenu();
+        boolean continueRunning = true; //Tracks whether the trigonometry while loop should continue running
+        new TrigonometryMenu();
         while(continueRunning)
         {
             System.out.println(ProjectGoldStarsCalculatorC.theme);
+            //Prompt the user for input
             System.out.print("Please enter the number or letter of the option you want, or press M to see the Trigonometry Menu again: ");
-            String trigonometryMenuChoice = keyboard.next();
-            trigonometryMenuChoice = trigonometryMenuChoice.toUpperCase();
+            //Get the user's input, convert it to upper case, and save it in a String
+            String trigonometryMenuChoice = keyboard.next().toUpperCase();
             System.out.println(ProjectGoldStarsCalculatorC.theme);
+            //Process the user's input
             switch(trigonometryMenuChoice)
             {
                 case "M":
                 {
-                    displayTrigonometryMenu();
+                    new TrigonometryMenu();
                     break;
                 }
                 case "1":
@@ -74,19 +76,5 @@ public class Trigonometry
                 }
             }
         }
-    }
-    
-    private static void displayTrigonometryMenu()
-    {
-        System.out.println("TRIGONOMETRY MENU\n"
-                + "1: Sine (Degrees)\n"
-                + "2: Cosine (Degrees)\n"
-                + "3: Tangent (Degrees)\n"
-                + "4: Sine (Radians)\n"
-                + "5: Cosine (Radians)\n"
-                + "6: Tangent (Radians)\n"
-                + "7: Convert Degrees to Radians\n"
-                + "8: Convert Radians to Degrees\n"
-                + "X: Exit Trigonometry Menu");
     }
 }

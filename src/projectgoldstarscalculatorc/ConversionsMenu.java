@@ -6,6 +6,7 @@ public class ConversionsMenu
         conversionsMenu();
     }
     
+    //Prints the Conversions Menu to the screen
     private static void conversionsMenu()
     {
         System.out.println("CONVERSIONS MENU\n"
