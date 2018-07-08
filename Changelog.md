@@ -2,6 +2,9 @@
 ### Changelog
 
 ## Version 1.3.x
+### Version 1.3.2
+* Updated the Quadratic Equation Solver.
+
 ### Version 1.3.1
 * Updated Exponents.
 * Updated Natural Log.

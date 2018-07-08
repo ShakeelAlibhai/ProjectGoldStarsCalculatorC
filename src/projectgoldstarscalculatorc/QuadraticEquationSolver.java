@@ -6,35 +6,42 @@ public class QuadraticEquationSolver
     
     public QuadraticEquationSolver()
     {
-        System.out.println("Please enter the quadratic equation in the form ax^2 + bx + c = 0.");
-        a = userPrompt('a');
-        b = userPrompt('b');
-        c = userPrompt('c');
-        solve();
-    }
-    
-    private double userPrompt(char variable)
-    {
         Scanner keyboard = new Scanner(System.in);
-        boolean repeat = false;
-        double input = 0.0;
-        do
+        System.out.println("Please enter the quadratic equation in the form ax^2 + bx + c = 0.");
+        System.out.print("a: ");
+        String input = keyboard.next();
+        try
         {
-            System.out.print(variable + ": ");
-            String inputStr = keyboard.next();
-            try
-            {
-                input = Double.parseDouble(inputStr);
-                repeat = false;
-            }
-            catch(Exception e)
-            {
-                System.out.println("ERROR\n"
-                        + "Please re-enter value.");
-                repeat = true;
-            }
-        }while(repeat);
-        return input;
+            a = Double.parseDouble(input);
+        }
+        catch(Exception e)
+        {
+            System.out.println("ERROR");
+            return;
+        }
+        System.out.print("b: ");
+        input = keyboard.next();
+        try
+        {
+            b = Double.parseDouble(input);
+        }
+        catch(Exception e)
+        {
+            System.out.println("ERROR");
+            return;
+        }
+        System.out.print("c: ");
+        input = keyboard.next();
+        try
+        {
+            c = Double.parseDouble(input);
+        }
+        catch(Exception e)
+        {
+            System.out.println("ERROR");
+            return;
+        }
+        solve();
     }
     
     private void solve()
